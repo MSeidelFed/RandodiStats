@@ -1,7 +1,7 @@
 # RandodiStats
 Random distributions with specific shapes and related statistics
 
-The function plotting_distributions allows to plot the distribution of multiple variable of interest by estimating its shape thorugh the kurtosis and square of skewness parameters. These parameters are a dependency of the "fitdistrplus" R package.
+The function plotting_distributions allows to plot the distribution of multiple variables of interest by estimating their shape through the kurtosis and square of skewness parameters. These parameters are a dependency of the "fitdistrplus" R package.
 
 The function requires four parameters, e.g:
 
@@ -16,7 +16,7 @@ gamma <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, R
 
 ```
 
-Distribution_test_mat is a matrix R object of the featuring response variables in each columns and their measured values across treatments in rows. e.g: 
+Distribution_test_mat is a matrix R object featuring response variables in each column and their measured values across treatments in rows. e.g: 
 
 ```
 
