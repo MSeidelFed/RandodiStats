@@ -22,7 +22,7 @@ Distribution_test_mat is a matrix R object of the featuring response variables i
 
 head(Distribution_test_mat)
 
-```
+
 
         [,1]      [,2]      [,3]     [,4]
 V1    11.159738  3.635386  2.329438 4.596254
@@ -35,6 +35,8 @@ V7     2.297491  4.258879  5.104113 2.535703
 V8     2.801981  4.114735  3.031988 1.973867
 V9     4.128301  4.207040  7.094382 2.803939
 V10    4.490545  3.970312  3.317899 3.038933
+
+```
 
 The distributions shapes included in the test must be one of the outlined four classes: "logis", "Normal", "Beta", "gamma"
 
