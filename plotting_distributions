@@ -103,7 +103,7 @@ model_intercept <- model$coefficients[1]
 model_slope <- model$coefficients[2]
 
 
-## plot of your data distribution plus line of gamma distribution
+## plot of your data distribution plus line of selected distribution
 
 plot(average_distribution_plot, ylim = c(10,0))
 
