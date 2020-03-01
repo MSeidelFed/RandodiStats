@@ -6,7 +6,7 @@ plotting_distributions <- function(Distribution_test_mat = test,
   if(!require(fitdistrplus)){install.packages("fitdistrplus"); require(fitdistrplus)}
   library(fitdistrplus)
   
-### Transform a list into a data frame (https://www.rdocumentation.org/packages/qdapTools/versions/1.3.3/topics/list2df)
+### funtion to Transform a list into a data frame (https://www.rdocumentation.org/packages/qdapTools/versions/1.3.3/topics/list2df)
   
 list2df <- function(x) 
 { 
@@ -30,11 +30,11 @@ for (i in 1:dim(Distribution_test_mat)[1]) {
 
 average_distribution_plot <- t(rbind("square of skewness" = list2df(SKEW)^2, kurtosis = list2df(KURT)))
 
-## choosing any distribution you want
+## choosing a distribution
 
 if (Regression_Family == "gamma") {
 
-      ## vectors of gamma distribution to estimate intercept and slope
+### vectors of gamma distribution to estimate intercept and slope
 
       test <- matrix(data = NA, nrow = dim(Distribution_test_mat)[1], ncol = n_random_distributions)
 
@@ -46,7 +46,7 @@ if (Regression_Family == "gamma") {
   
 }} else if (Regression_Family == "logis") {
   
-                ## vectors of logis distribution to estimate intercept and slope
+### vectors of logis distribution to estimate intercept and slope
   
                 test <- matrix(data = NA, nrow = dim(Distribution_test_mat)[1], ncol = n_random_distributions)
   
@@ -58,7 +58,7 @@ if (Regression_Family == "gamma") {
   
 }} else if (Regression_Family == "Beta") {
                   
-                        ## vectors of beta distribution to estimate intercept and slope
+### vectors of beta distribution to estimate intercept and slope
                   
                         test <- matrix(data = NA, nrow = dim(Distribution_test_mat)[1], ncol = n_random_distributions)
                   
@@ -70,7 +70,7 @@ if (Regression_Family == "gamma") {
                     
 }} else if (Regression_Family == "Normal") {
                           
-                              ## vectors of normal distribution to estimate intercept and slope
+### vectors of normal distribution to estimate intercept and slope
                           
                               test <- matrix(data = NA, nrow = dim(Distribution_test_mat)[1], ncol = n_random_distributions)
                           
@@ -103,7 +103,7 @@ model_intercept <- model$coefficients[1]
 model_slope <- model$coefficients[2]
 
 
-## plot of your data distribution plus line of selected distribution
+## plot of your variables´ distributions plus a line featuring a selected distribution
 
 plot(average_distribution_plot, ylim = c(10,0))
 
