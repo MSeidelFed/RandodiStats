@@ -6,7 +6,7 @@ plotting_distributions <- function(Distribution_test_mat = test,
   if(!require(fitdistrplus)){install.packages("fitdistrplus"); require(fitdistrplus)}
   library(fitdistrplus)
   
-### Transform a list into a PDF
+### Transform a list into a data frame (https://www.rdocumentation.org/packages/qdapTools/versions/1.3.3/topics/list2df)
   
 list2df <- function(x) 
 { 
