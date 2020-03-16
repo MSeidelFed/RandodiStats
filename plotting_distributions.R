@@ -20,11 +20,11 @@ SKEW <- vector(mode = "list", length = dim(Distribution_test_mat)[1])
 
 KURT <- vector(mode = "list", length = dim(Distribution_test_mat)[1])
 
-for (i in 1:dim(Distribution_test_mat)[1]) {
+for (i in 1:dim(Distribution_test_mat)[2]) {
   
-  SKEW[[i]]  <- descdist(as.numeric(Distribution_test_mat[i,]), graph = F)$skewness
+  SKEW[[i]]  <- descdist(as.numeric(Distribution_test_mat[,i]), graph = F)$skewness
   
-  KURT[[i]]  <- descdist(as.numeric(Distribution_test_mat[i,]), graph = F)$kurtosis
+  KURT[[i]]  <- descdist(as.numeric(Distribution_test_mat[,i]), graph = F)$kurtosis
   
 }
 
@@ -105,11 +105,11 @@ model_slope <- model$coefficients[2]
 
 ## plot of your variables´ distributions plus a line featuring a selected distribution
 
-plot(average_distribution_plot, ylim = c(10,0))
+plot(average_distribution_plot, ylim = c(10,0), xlim = c(0,5))
 
 abline(a = model_slope, b = model_intercept, col = colour)
 
 
-return(test_distribution_plot)
+return(average_distribution_plot)
 
 }
