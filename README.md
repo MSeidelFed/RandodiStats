@@ -15,13 +15,13 @@ Beta <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Re
 gamma <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "gamma", n_random_distributions = 1000, colour = "blue", random_distributions_plot = T, vector_colors = vector_colors)
 
 ```
+**Mandatory function parameter - a data matrix**
 
 Distribution_test_mat is a matrix R object featuring response variables in each column and their measured values across treatments in rows. 
 
 In order to produce a exemplary matrix to be run into the main function, I have posted the function "distribution_test_mat" that requires two optional arguments to be used. e.g.
 
 ```
-
 Distribution_test_mat <- distribution_test_mat()
 
 Distribution_test_mat[1:5,1:5]
@@ -32,7 +32,6 @@ Distribution_test_mat[1:5,1:5]
 [3,] 16.0  9.7 13.6 10.8 15.6
 [4,] 25.4  4.9  4.5 14.0  9.4
 [5,] 18.1 24.7  3.5  7.7  4.3
-
 ```
 
 The resulting default matrix will include 1000 "logis", "Normal", "Beta", "gamma" distributed randomly generated response variables. These are the distributions shapes included in the test and they must be stated in the main function "plotting_distributions". 
@@ -44,7 +43,7 @@ Example of the shape plot obatained with 1000 randomly generated response variab
 logis = "red"; normal = "yellow"; beta = "grey"; gamma = "gamma"
 
 
-**Main function parameters**
+**Optional function parameters - default to gamma, 100 random distributions, red color & no colors vector**
 
 n_random_distributions represents the amount of independent distributions with the specific shape that the function will use to construct the kurtosis and square of skewness graph.
 
