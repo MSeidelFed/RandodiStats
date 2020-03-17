@@ -54,5 +54,5 @@ If TRUE random_distributions_plot generates a plot of your random distribution a
 
 Finally, vector_colors enables you to input a charachter vector specifying the colour in which independent response variables should be plotted (see appended image). This feature is useful if you want to color differently potentially correlated variables which would show similar distribuions.
 
-The function returns a matrix with the kurtosis and square of skewness values for the inputed response variables. Secondly, it returns a plot with the distribution of your variables as compared to the simplified-linear version of the shape distribution chosen by you. Note that the real distribution (appended image is much more complex that the simplified-linear version)
+The function returns a matrix with the kurtosis and square of skewness values for the inputed response variables. Secondly, it returns a plot with the distribution of your variables as compared to the simplified-linear version of the shape distribution chosen by you. Note that the actual distribution of shape distributions (appended image) is much more complex that the simplified-linear version.
 
