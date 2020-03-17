@@ -6,13 +6,13 @@ The function plotting_distributions allows plotting the distribution of multiple
 The function requires one mandatory parameter and four optional ones, e.g.
 
 ```
-logis <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "logis", n_random_distributions = 1000, colour = "black", random_distributions_plot = T, vector_colors = vector_colors)
+logis <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "logis", n_random_distributions = 1000, colour = "red", random_distributions_plot = T, vector_colors = vector_colors)
 
-Normal <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "Normal", n_random_distributions = 1000, colour = "blue", random_distributions_plot = T, vector_colors = vector_colors)
+Normal <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "Normal", n_random_distributions = 1000, colour = "yellow", random_distributions_plot = T, vector_colors = vector_colors)
 
-Beta <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "Beta", n_random_distributions = 1000, colour = "red", random_distributions_plot = T, vector_colors = vector_colors)
+Beta <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "Beta", n_random_distributions = 1000, colour = "grey", random_distributions_plot = T, vector_colors = vector_colors)
 
-gamma <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "gamma", n_random_distributions = 1000, colour = "green", random_distributions_plot = T, vector_colors = vector_colors)
+gamma <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "gamma", n_random_distributions = 1000, colour = "blue", random_distributions_plot = T, vector_colors = vector_colors)
 
 ```
 
@@ -40,6 +40,11 @@ The resulting default matrix will include 1000 "logis", "Normal", "Beta", "gamma
 Example of the shape plot obatained with 1000 randomly generated response variables per distrbution (using the function "distribution_test_mat")
 
 ![Distributions](/000036.png)
+
+logis = "red"
+normal = "yellow"
+beta = "grey"
+gamma = "gamma"
 
 
 **Main function parameters**
