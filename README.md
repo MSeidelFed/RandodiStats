@@ -50,3 +50,5 @@ The function returns a matrix with the kurtosis and square of skewness values fo
 ```
 ![Distributions](/000036.png)
 ```
+
+![GitHub Logo](/images/logo.png)
