@@ -35,7 +35,14 @@ Distribution_test_mat[1:5,1:5]
 
 ```
 
-The resulting default matrix will include 1000 "logis", "Normal", "Beta", "gamma" distributed randomly generated response variables. These are the distributions shapes included in the test and they must be stated in the main function "plotting_distributions".
+The resulting default matrix will include 1000 "logis", "Normal", "Beta", "gamma" distributed randomly generated response variables. These are the distributions shapes included in the test and they must be stated in the main function "plotting_distributions". 
+
+Example of the shape plot obatained with 1000 randomly generated response variables per distrbution (using the function "distribution_test_mat")
+
+![Distributions](/000036.png)
+
+
+**Main function parameters**
 
 n_random_distributions represents the amount of independent distributions with the specific shape that the function will use to construct the kurtosis and square of skewness graph.
 
@@ -43,10 +50,10 @@ colour defines the color of the distribution line in the graph.
 
 If TRUE random_distributions_plot generates a plot of your random distribution aiming at observing the local concentration in individual points, distributions are not a linear trend as outlined in the resulting graph but rather complex concentrations that can be observed with this plot.
 
-Finally, vector_colors enables you to input a charachter vector specifying the colour in which independent response variables should be plotted. This feature is useful if you want to color differently potentially correlated variables which would show similar distribuions.
+Finally, vector_colors enables you to input a charachter vector specifying the colour in which independent response variables should be plotted (see appended image). This feature is useful if you want to color differently potentially correlated variables which would show similar distribuions.
 
 The function returns a matrix with the kurtosis and square of skewness values for the inputed response variables. Secondly, it returns a plot with the distribution of your variables as compared to the simplified-linear version of the shape distribution chosen by you.
 
 
-![Distributions](/000036.png)
+
 
