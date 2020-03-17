@@ -3,16 +3,16 @@ Random distributions with specific shapes and related statistics
 
 The function plotting_distributions allows plotting the distribution of multiple variables of interest by estimating their shape through the kurtosis and square of skewness parameters. These parameters are a dependency of the "fitdistrplus" R package.
 
-The function requires four parameters, e.g.
+The function requires one mandatory parameter and four optional ones, e.g.
 
 ```
-logis <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "logis", n_random_distributions = 1000, colour = "grey")
+logis <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "logis", n_random_distributions = 1000, colour = "grey", random_distributions_plot = T)
 
-Normal <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "Normal", n_random_distributions = 1000, colour = "blue")
+Normal <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "Normal", n_random_distributions = 1000, colour = "blue", random_distributions_plot = T)
 
-Beta <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "Beta", n_random_distributions = 1000, colour = "red")
+Beta <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "Beta", n_random_distributions = 1000, colour = "red", random_distributions_plot = T)
 
-gamma <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "gamma", n_random_distributions = 1000, colour = "green")
+gamma <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "gamma", n_random_distributions = 1000, colour = "green", random_distributions_plot = T)
 
 ```
 
@@ -42,9 +42,8 @@ The distributions shapes included in the test must be one of the outlined four c
 
 n_random_distributions represents the amount of independent distributions with the specific shape that the function will use to construct the kurtosis and square of skewness graph.
 
-Finally, colour defines the color of the distribution line in the graph.
+colour defines the color of the distribution line in the graph.
 
-The function returns a matrix with the kurtosis and square of skewness values for the random distributions in order to plot them if you want. Secondly, it returns a plot with the distribution of your variables as compared to the positions of the shape distribution chosen by you.
+Finally, If TRUE random_distributions_plot generates a plot of your random distribution aiming at observing the local concentration in individual points, distributions are not a linear trend as outlined in the resulting graph but rather complex concentrations that can be observed with this plot.
 
-
-
+The function returns a matrix with the kurtosis and square of skewness values for the inputed response variables. Secondly, it returns a plot with the distribution of your variables as compared to the simplified-linear version of the shape distribution chosen by you.
