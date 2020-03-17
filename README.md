@@ -48,6 +48,6 @@ Finally, vector_colors enables you to input a charachter vector specifying the c
 The function returns a matrix with the kurtosis and square of skewness values for the inputed response variables. Secondly, it returns a plot with the distribution of your variables as compared to the simplified-linear version of the shape distribution chosen by you.
 
 ```
-![Distributions](000036.png)
+![Distributions](/000036.png)
 
 ```
