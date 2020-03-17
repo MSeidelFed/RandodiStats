@@ -41,10 +41,7 @@ Example of the shape plot obatained with 1000 randomly generated response variab
 
 ![Distributions](/000036.png)
 
-logis = "red"
-normal = "yellow"
-beta = "grey"
-gamma = "gamma"
+logis = "red"; normal = "yellow"; beta = "grey"; gamma = "gamma"
 
 
 **Main function parameters**
