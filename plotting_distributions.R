@@ -1,7 +1,8 @@
 plotting_distributions <- function(Distribution_test_mat = test,
                                    Regression_Family = gamma,
                                    n_random_distributions = 100,
-                                   colour = "red") {
+                                   colour = "red",
+                                   random_distributions_plot = F) {
   
   if(!require(fitdistrplus)){install.packages("fitdistrplus"); require(fitdistrplus)}
   library(fitdistrplus)
@@ -109,6 +110,15 @@ plot(average_distribution_plot, ylim = c(10,0), xlim = c(0,5))
 
 abline(a = model_slope, b = model_intercept, col = colour)
 
+if (random_distributions_plot == F) {
+
+NA
+  
+} else { 
+  
+  plot(test_distribution_plot, ylim = c(10,0), xlim = c(0,5))
+  
+}
 
 return(average_distribution_plot)
 
