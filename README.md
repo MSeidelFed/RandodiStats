@@ -19,7 +19,7 @@ gamma <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, R
 
 Distribution_test_mat is a matrix R object featuring response variables in each column and their measured values across treatments in rows. 
 
-In order to produce a exemplary matrix to be run into the main function, I have posted the function "distribution_test_mat" that requires two optional arguments to be used. e.g.
+In order to produce an exemplary matrix to be run into the main function, I have posted the function "distribution_test_mat" that requires two optional arguments to be used. e.g.
 
 ```
 Distribution_test_mat <- distribution_test_mat()
