@@ -1,5 +1,5 @@
 # RandodiStats
-Random distributions with specific shapes and related statistics
+*R functions to work and test random distributions with specific shapes and related statistics*
 
 The function plotting_distributions allows plotting the distribution of multiple variables of interest by estimating their shape through the kurtosis and square of skewness parameters. These parameters are a dependency of the "fitdistrplus" R package.
 
@@ -15,12 +15,11 @@ Beta <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Re
 gamma <- plotting_distributions(Distribution_test_mat = Distribution_test_mat, Regression_Family = "gamma", n_random_distributions = 1000, colour = "blue", random_distributions_plot = T, vector_colors = vector_colors)
 
 ```
-**Mandatory function parameter - a data matrix**
+## Mandatory function parameter - a data matrix
 
 Distribution_test_mat is a matrix R object featuring response variables in each column and their measured values across treatments in rows. 
 
 In order to produce an exemplary matrix to be run into the main function, I have posted the function "distribution_test_mat" that requires two optional arguments to be used. e.g.
-
 ```
 Distribution_test_mat <- distribution_test_mat()
 
@@ -38,12 +37,12 @@ The resulting default matrix will include 1000 "logis", "Normal", "Beta", "gamma
 
 Example of the shape plot obatained with 1000 randomly generated response variables per distrbution (using the function "distribution_test_mat")
 
-![Distributions](/000036.png)
+![Distributions](Images/Typical_Distributions.png)
 
 logis = "red"; normal = "yellow"; beta = "grey"; gamma = "gamma"
 
 
-**Optional function parameters - default to gamma, 100 random distributions, red color & no colors vector**
+## Optional function parameters - default to gamma, 100 random distributions, red color & no colors vector
 
 n_random_distributions represents the amount of independent distributions with the specific shape that the function will use to construct the kurtosis and square of skewness graph.
 
