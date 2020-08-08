@@ -1,5 +1,5 @@
 # RandodiStats
-*R functions to work and test random distributions with specific shapes and related statistics*
+*R functions to work and test randomly generated response variables with specific distribution shapes and related statistics*
 
 The function plotting_distributions allows plotting the distribution of multiple variables of interest by estimating their shape through the kurtosis and square of skewness parameters. These parameters are a dependency of the "fitdistrplus" R package.
 
